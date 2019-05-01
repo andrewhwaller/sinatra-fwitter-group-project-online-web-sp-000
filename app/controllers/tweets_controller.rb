@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
 
   get '/tweets' do
-    erb :"/tweets/index.erb"
+    erb :'/tweets/show'
   end
 
   get '/tweets/new' do
@@ -9,6 +9,6 @@ class TweetsController < ApplicationController
   end
 
   post '/tweets' do
-
+    erb :'/tweets'
   end
 end
