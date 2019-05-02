@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
       @tweets = Tweet.all
       erb :'/tweets/show'
     else
-      redirect "/login/"
+      redirect "/login"
     end
   end
 
