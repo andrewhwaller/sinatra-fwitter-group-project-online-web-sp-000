@@ -75,6 +75,7 @@ class TweetsController < ApplicationController
       else
         redirect '/login'
       end
+    end
   end
 
   delete '/tweets/:id/delete' do
