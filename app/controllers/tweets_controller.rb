@@ -14,7 +14,7 @@ class TweetsController < ApplicationController
     if logged_in?
       erb :'tweets/new'
     else
-      redirect to '/login'
+      redirect '/login'
     end
   end
 
