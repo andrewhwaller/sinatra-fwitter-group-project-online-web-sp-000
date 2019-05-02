@@ -1,10 +1,5 @@
 class TweetsController < ApplicationController
 
-  configure do
-    enable :sessions
-  end
-
-  end
   get '/tweets' do
     if !logged_in?
       redirect '/login'
@@ -36,4 +31,6 @@ class TweetsController < ApplicationController
       else
       redirect to '/login'
     end
+  end
+
 end
