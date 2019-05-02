@@ -24,10 +24,10 @@ class UsersController < ApplicationController
   end
 
   get '/login' do
-    if logged_in?
+    if !logged_in?
+      erb :"users/login"
       redirect '/tweets'
     else
-      redirect '/login'
     end
   end
 
