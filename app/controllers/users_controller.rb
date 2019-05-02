@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     if logged_in?
       redirect '/tweets'
     else
-      redirect 'users/login'
+      redirect '/login'
     end
   end
 
