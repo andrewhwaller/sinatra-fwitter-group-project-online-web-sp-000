@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   get '/signup' do
     if !logged_in?
       erb :'users/signup', locals: {message: "Please sign up before you sign in"}
-    elsif logged_in?
+    else
       redirect to '/tweets'
     end
   end
