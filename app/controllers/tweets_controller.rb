@@ -7,7 +7,7 @@ class TweetsController < ApplicationController
       @user = current_user
       @tweets = Tweet.all
       erb :'/tweets/show'
-    end
+    # end
   end
 
   get '/tweets/new' do
