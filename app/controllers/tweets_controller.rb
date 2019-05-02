@@ -71,7 +71,7 @@ class TweetsController < ApplicationController
           end
         else
           refine ClassName do
-            
+
           end
   end
 
