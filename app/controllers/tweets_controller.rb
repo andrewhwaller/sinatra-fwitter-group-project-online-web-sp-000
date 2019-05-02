@@ -1,11 +1,11 @@
 class TweetsController < ApplicationController
 
   get '/tweets' do
-    if !logged_in?
-      redirect to "/login"
-    else
+    if logged_in?
       @tweets = Tweet.all
-      erb :'/tweets/show'
+      erb :'tweets/show'
+    else
+      redirect to '/login'
     end
   end
 
